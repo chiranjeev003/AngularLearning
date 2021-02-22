@@ -1,9 +1,45 @@
 <h1>Angular App</h1>
 <!-- <favourite [isFavorite]="post.isFavourite" (change)="onFavouriteChanged($event)"></favourite>   -->
 
-<bootstrap-panel>
+<!-- <bootstrap-panel>
     <ng-container class="heading">Heading</ng-container>
     <div class="body">
         <h2>Panel Body</h2>
     </div>
-</bootstrap-panel>
+</bootstrap-panel> -->
+
+<!-- <div *ngIf="doWeHaveCoursesInDiv()">
+    List of courses
+</div>
+<div *ngIf="!doWeHaveCoursesInDiv()">
+    No courses yet.
+</div> -->
+
+
+<!-- To be used when large subtree exists and building DOM tree is not costly -->
+<!-- <div *ngIf="courses.length > 0; then courseList else noCourse"></div>
+
+<ng-template #courseList>
+    List of courses:
+    <ul>
+        <li *ngFor="let eachCourse of courses">{{eachCourse}}</li>
+    </ul>
+</ng-template>
+
+<ng-template #noCourse>
+    No courses yet.
+</ng-template> -->
+
+<!-- To be used when building DOM tree is costly -->
+<!-- <div [hidden]="!doWeHaveCoursesInDiv()">
+    List of cours es through property binding.
+</div>
+
+<div [hidden]="doWeHaveCoursesInDiv()">
+    No courses yet through property binding.
+</div> -->
+
+
+<!-- <app-switch-case></app-switch-case> -->
+
+<app-course-list></app-course-list>

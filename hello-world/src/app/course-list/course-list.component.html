@@ -1,0 +1,7 @@
+<!-- <button (click)="addCourse()">Add</button> -->
+<button (click)="loadCoarses()">Load Coarses</button>
+<ul>
+    <li *ngFor="let course of courses;">{{course.name}}
+         <!-- <button (click)="onChange(course)">Remove</button> -->
+    </li>    
+</ul>

@@ -12,6 +12,8 @@ import { SummaryPipe } from './summary.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { PanelComponent } from './panel/panel.component';
 import { InputFormatDirective } from './input-format.directive';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { InputFormatDirective } from './input-format.directive';
     SummaryPipe,
     FavouriteComponent,
     PanelComponent,
-    InputFormatDirective 
+    InputFormatDirective,
+    SwitchCaseComponent,
+    CourseListComponent 
   ],
   imports: [
     BrowserModule,

@@ -9,13 +9,22 @@ import { FavChangeEventArgs } from './favourite/favourite.component';
 export class AppComponent {
   title = 'Angular hello-world';
   
-  post = {
-    title: "Title",
-    isFavourite: true
-  }
+  // post = {
+  //   title: "Title",
+  //   isFavourite: true
+  // }
 
-  onFavouriteChanged(fav: FavChangeEventArgs){
-    console.log("the current state is " + fav.newValue); 
+  // onFavouriteChanged(fav: FavChangeEventArgs){
+  //   console.log("the current state is " + fav.newValue); 
+  // }
+
+  courses = [1,2];
+
+  doWeHaveCoursesInDiv(){
+    if (this.courses.length > 0)
+      return true;
+    else  
+      return false;
   }
 
 }
