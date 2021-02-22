@@ -19,6 +19,13 @@ export class CourseListComponent implements OnInit {
   //   course.name = "Updated";
   // }
 
+  canSave=true;
+
+  task={
+    title: 'Job application',
+    asignee: null as any 
+  }
+
   loadCoarses(){
     this.courses = [
       {id: 1, name: "Course1"},

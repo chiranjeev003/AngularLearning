@@ -5,3 +5,24 @@
          <!-- <button (click)="onChange(course)">Remove</button> -->
     </li>    
 </ul>
+<!-- 
+<button [style.backgroundColor]="canSave ? 'blue' : 'grey'"
+        [style.color]="canSave ? 'white' : 'black'"
+        [style.fontWeight]="canSave ? 'bold' : 'normal'" -->
+<button
+        [ngStyle]="{
+            'backgroundColor' : canSave ? 'blue' : 'grey',
+            'color' : canSave ? 'white' : 'black',
+            'fontWeight' : canSave ? 'bold' : 'normal'
+        }"> Save 
+</button>
+
+<br>
+<br>
+
+<span>{{task.asignee?.name}}</span>
+
+
+<div>
+    <input type="text" [appInputFormat]="'BAKRI'"/>
+</div>
