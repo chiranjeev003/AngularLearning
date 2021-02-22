@@ -9,6 +9,9 @@ import { CoursesService } from './courses.service';
 import { FormsModule } from '@angular/forms';
 import { CourseComponent } from './course.component';
 import { SummaryPipe } from './summary.pipe';
+import { FavouriteComponent } from './favourite/favourite.component';
+import { PanelComponent } from './panel/panel.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SummaryPipe } from './summary.pipe';
     CoursesComponent,
     BakriComponent,
     CourseComponent,
-    SummaryPipe 
+    SummaryPipe,
+    FavouriteComponent,
+    PanelComponent,
+    InputFormatDirective 
   ],
   imports: [
     BrowserModule,
