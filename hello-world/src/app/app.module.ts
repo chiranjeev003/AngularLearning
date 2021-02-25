@@ -14,6 +14,7 @@ import { PanelComponent } from './panel/panel.component';
 import { InputFormatDirective } from './input-format.directive';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { CourseListComponent } from './course-list/course-list.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CourseListComponent } from './course-list/course-list.component';
     PanelComponent,
     InputFormatDirective,
     SwitchCaseComponent,
-    CourseListComponent 
+    CourseListComponent,
+    ContactFormComponent 
   ],
   imports: [
     BrowserModule,
