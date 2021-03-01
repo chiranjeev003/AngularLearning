@@ -8,3 +8,7 @@ body {
 .form-control.ng-touched.ng-dirty.ng-invalid {
     border: 2px solid red;
 }
+
+.form-control.ng-touched.ng-pristine.ng-invalid{
+    border: 2px solid red;
+}

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { BakriComponent } from './bakri/bakri.component';
 import { CoursesService } from './courses.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CourseComponent } from './course.component';
 import { SummaryPipe } from './summary.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
@@ -15,6 +15,7 @@ import { InputFormatDirective } from './input-format.directive';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,14 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     InputFormatDirective,
     SwitchCaseComponent,
     CourseListComponent,
-    ContactFormComponent 
+    ContactFormComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [
     CoursesService  //dependancy injection
