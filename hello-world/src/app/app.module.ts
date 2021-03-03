@@ -16,6 +16,9 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -30,16 +33,19 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     SwitchCaseComponent,
     CourseListComponent,
     ContactFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
-    CoursesService  //dependancy injection
+    CoursesService,
+    PostService  //dependancy injection
   ],
   bootstrap: [AppComponent]
 })
